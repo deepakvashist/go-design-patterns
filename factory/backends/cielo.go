@@ -18,13 +18,3 @@ func (c *Cielo) TokenizeCreditCard() {
 func (c *Cielo) ProcessPayment() {
 	fmt.Println("CIELO: Payment finished successfully")
 }
-
-// GetCredentialUsername get credentials username.
-func (c *Cielo) GetCredentialUsername() string {
-	return c.credentials.username
-}
-
-// GetCredentialKey get credentials key.
-func (c *Cielo) GetCredentialKey() string {
-	return c.credentials.key
-}

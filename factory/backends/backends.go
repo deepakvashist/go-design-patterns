@@ -8,13 +8,21 @@ import (
 type PaymentBackend interface {
 	TokenizeCreditCard()
 	ProcessPayment()
-	GetCredentialUsername() string
-	GetCredentialKey() string
 }
 
 type credentials struct {
 	username string
 	key      string
+}
+
+// GetUsername returns the credentials username.
+func (c *credentials) GetUsername() string {
+	return c.username
+}
+
+// GetKey returns the credentials key.
+func (c *credentials) GetKey() string {
+	return c.key
 }
 
 // GetPaymentBackend is a factory for payments backends dependin on backend ID.

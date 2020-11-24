@@ -18,13 +18,3 @@ func (r *Rede) TokenizeCreditCard() {
 func (r *Rede) ProcessPayment() {
 	fmt.Println("REDE: Payment finished successfully")
 }
-
-// GetCredentialUsername get credentials username.
-func (r *Rede) GetCredentialUsername() string {
-	return r.credentials.username
-}
-
-// GetCredentialKey get credentials key.
-func (r *Rede) GetCredentialKey() string {
-	return r.credentials.key
-}
